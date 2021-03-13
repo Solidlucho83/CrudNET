@@ -1,0 +1,9 @@
+﻿  private void button1_Click(Empleados nuevo)
+        {
+            SqlConnection conexion = new SqlConnection(cadena);
+            SqlCommand comando = new SqlCommand();
+            comando.Connection = conexion;
+            comando.CommandType = System.Data.CommandType.Text;
+            comando.CommandText = "insert into Empleados(NombreCompleto, DNI, Edad, Casado, Salario) values('Luis Castañeira', '30185200', 1, 37, 40000)";
+
+        }
